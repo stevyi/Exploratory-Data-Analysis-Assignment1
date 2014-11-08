@@ -21,7 +21,7 @@ Rdat$Datetime <- as.POSIXct(date_time)
 # Do the plotting
 with(data, {
     plot(Sub_metering_1~Datetime, type = "l",
-         ylab = "Global Active Power (kilowatts)", xlab = "")
+         ylab = "Energy Sub Metering)", xlab = "")
     lines(Sub_metering_2~Datetime, col = 'Red')
     lines(Sub_metering_3~Datetime, col = 'Blue')
 })
