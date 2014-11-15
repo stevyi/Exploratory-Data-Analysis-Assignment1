@@ -18,7 +18,7 @@ rm(AllData)
 date_time <- paste(as.Date(Rdat$Date),Rdat$Time)
 Rdat$Datetime <- as.POSIXct(date_time)
 
-# Do the plotting
+# Do the plotting 
 plot(Rdat$Global_active_power~Rdat$Datetime, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 
 # Saves data into the file "plot2.png"
